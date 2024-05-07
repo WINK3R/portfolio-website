@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+type: docker
+
+steps:
+  - name: build
+    image: node:22-alpine
+    commands:
+      - yarn install
+      - yarn build
