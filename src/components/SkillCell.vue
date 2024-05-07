@@ -14,7 +14,3 @@ const props = defineProps({
     <p class="text-grey-90 text-lg leading-5 overflow-hidden text-ellipsis">{{ props.text }}</p>
   </div>
 </template>
-
-<style scoped>
-
-</style>
