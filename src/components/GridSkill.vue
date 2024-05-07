@@ -10,13 +10,15 @@ const skills = [
   },
   {
     title: "Optimisation",
-    text: "Concevoir en utilisant les patrons de conception adéquates, dans l’objectif de tirer le plein potentiel de chaque projet.",
+    text: "Concevoir en utilisant les patrons de conception adéquates, dans l’objectif de tirer le plein potentiel " +
+        "de chaque projet.",
     image: "optimisation.png",
     alt: "gear icon"
   },
   {
     title: "Gestion de la donnée",
-    text: "Administrer et gérer la gestion de l’information dans vos applications en élaborant une base de donnée appropriée à vos besoins.",
+    text: "Administrer et gérer la gestion de l’information dans vos applications en élaborant une base de donnée " +
+        "appropriée à vos besoins.",
     image: "data.png",
     alt: "data icon"
   },
@@ -44,7 +46,9 @@ const skills = [
 <template>
   <div class="grid gap-5 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1">
     <SkillCell v-for="(skill, index) in skills" :key="index" :title="skill.title" :text="skill.text" class="group">
-      <img :src="`images/${ skill.image}`" :height="60" :width="60" class="h-7 w-7 group-hover:scale-110 transition-all ease-in duration-500 group-hover:brightness-200" :alt="skill.alt">
+      <img :src="`images/${ skill.image}`" :height="60" :width="60"
+           class="h-7 w-7 group-hover:scale-110 transition-all ease-in duration-500 group-hover:brightness-200"
+           :alt="skill.alt">
     </SkillCell>
   </div>
 </template>

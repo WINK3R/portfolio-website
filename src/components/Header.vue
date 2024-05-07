@@ -36,7 +36,9 @@ function copyEmail(event) {
             <p class="selectable hidden lg:block">Delanierlucas@gmail.com</p>
             <div class="relative parent hidden lg:block">
               <PrimaryButton text="Copier" @click="copyEmail"/>
-              <Vue3Lottie ref="copyAnimation" :animationData="CopyJson" :height="180" :width="180" class="absolute z-10 pointer-events-none child" :auto-play="false" :loop="false" v-show="display"/>
+              <Vue3Lottie ref="copyAnimation" :animationData="CopyJson" :height="180" :width="180"
+                          class="absolute z-10 pointer-events-none child" :auto-play="false" :loop="false"
+                          v-show="display"/>
             </div>
             <PrimaryButton text="Cv" @click="openCV"/>
         </div>

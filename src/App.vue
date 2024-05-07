@@ -1,3 +1,4 @@
+<!-- Copyright 2024 Lucas Delanier -->
 <script setup>
 import Header from './components/Header.vue'
 import HeroContainer from './components/HeroContainer.vue';
@@ -25,7 +26,14 @@ const experiences = [
     year: "2023",
     image: "inrae-blue.png",
     company: "INRAE",
-    description: "Stage de 10 semaines portant sur l’élaboration d’un jeu sérieux (quizz) sur un site web à destination des chercheurs pour les aider dans leurs recherches sur l’alimentation et l’activité physique des jeunes français.<br><br>J’ai mis en pratique mes capacités à concevoir et optimiser une application existante ainsi qu'à faire des choix techniques décisifs. J’ai également su gérer la gestion de ce projet en mettant en place des pratiques propres aux méthodes agiles telles que la méthode SCRUM.<br><br>J’ai eu à utiliser des technologies du Web comme PHP, HTML & CSS ainsi que Bootstrap. Pour la gestion des données, j’ai mis en place une base de données SQL. Nous avons également dû porter une attention toute particulière au RGPD en raison de la manipulation de données de santé sensibles.",
+    description: "Stage de 10 semaines portant sur l’élaboration d’un jeu sérieux (quizz) sur un site web à " +
+        "destination des chercheurs pour les aider dans leurs recherches sur l’alimentation et l’activité " +
+        "physique des jeunes français.<br><br>J’ai mis en pratique mes capacités à concevoir et optimiser une " +
+        "application existante ainsi qu'à faire des choix techniques décisifs. J’ai également su gérer la gestion " +
+        "de ce projet en mettant en place des pratiques propres aux méthodes agiles telles que la méthode " +
+        "SCRUM.<br><br>J’ai eu à utiliser des technologies du Web comme PHP, HTML & CSS ainsi que Bootstrap. " +
+        "Pour la gestion des données, j’ai mis en place une base de données SQL. Nous avons également dû porter " +
+        "une attention toute particulière au RGPD en raison de la manipulation de données de santé sensibles.",
     important: true
   },
   {
@@ -41,7 +49,12 @@ const experiences = [
     year: "2024",
     image: "cikaba-blue.png",
     company: "Cikaba",
-    description: "Alternance d'1 an.<br><br>J’ai eu l’opportunité de rejoindre une équipe dynamique et agréable qui m’a permis de me professionnaliser dans un contexte favorable. J’ai travaillé en tant que développeur frontend.<br><br>Cela a consisté principalement en l’élaboration d’une application web en Vue.js qui sert de plateforme SSO pour centraliser l’authentification des utilisateurs sur une application. J’ai également pu exploiter mes compétences en design d’interface pour produire des maquettes et prototypes afin d’améliorer l’esthétique des applications en cours de développement.",
+    description: "Alternance d'1 an.<br><br>J’ai eu l’opportunité de rejoindre une équipe dynamique et agréable " +
+        "qui m’a permis de me professionnaliser dans un contexte favorable. J’ai travaillé en tant que développeur " +
+        "frontend.<br><br>Cela a consisté principalement en l’élaboration d’une application web en Vue.js qui sert " +
+        "de plateforme SSO pour centraliser l’authentification des utilisateurs sur une application. J’ai également " +
+        "pu exploiter mes compétences en design d’interface pour produire des maquettes et prototypes afin " +
+        "d’améliorer l’esthétique des applications en cours de développement.",
     important: true
   },
   {
@@ -121,8 +134,10 @@ onUnmounted(() => {
 
 <template>
   <div class=" absolute pointer-events-none w-full h-full overflow-clip">
-    <img src="./assets/images/camera-effect.png" class="top-10 right-10 w-full h-full object-cover z-0 scale-110" alt="">
-    <img src="./assets/images/filter.png" class="fixed bottom-0 right-0 w-full h-full object-cover z-50" alt="">
+    <img src="./assets/images/camera-effect.png" class="top-10 right-10 w-full h-full object-cover z-0 scale-110"
+         alt="" width="1512" height="1071">
+    <img src="./assets/images/filter.png" class="fixed bottom-0 right-0 w-full h-full object-cover z-50"
+         alt="" width="1508" height="1376">
   </div>
   <Header id="about"></Header>
   <HeroContainer class=" mt-6 sm:mt-14"/>
@@ -133,23 +148,61 @@ onUnmounted(() => {
     <BannerCell number="+" label="UI/UX <br> DESIGN"/>
   </ShowcaseBanner>
   <div class="flex-col flex pt-24 sm:pt-48 pb-28 z-10 relative" id="skills">
-    <span class="mx-4 text-3xl sm:text-4xl text-center font-medium bg-gradient-to-r from-grey-50 to-grey-100 bg-clip-text text-transparent px-10 ">Mon expertise repose sur <span class="bg-blue text-white hover:bg-transparent hover:text-grey-75 ease-in-out transition-all duration-1000">six piliers</span><br> essentiels.</span>
+    <span class="mx-4 text-3xl sm:text-4xl text-center font-medium bg-gradient-to-r from-grey-50
+    to-grey-100 bg-clip-text text-transparent px-10 ">
+      Mon expertise repose sur
+      <span class="bg-blue text-white hover:bg-transparent hover:text-grey-75 ease-in-out transition-all duration-1000">
+        six piliers
+      </span>
+      <br>
+      essentiels.
+    </span>
     <GridSkill class="mx-8 sm:mx-28 py-28"/>
   </div>
   <ShowcaseBanner>
-      <img v-for="langage in langages" :src="`images/${ langage.image}`" class="w-18 h-18 hover:-translate-y-1 transition-all duration-300 ease-in-out hover:rotate-12 origin-center" :alt="langage.name"/>
+      <img v-for="langage in langages" :src="`images/${ langage.image}`"
+           class="w-18 h-18 hover:-translate-y-1 transition-all duration-300 ease-in-out hover:rotate-12 origin-center"
+           :alt="langage.name" width="64" height="64"/>
   </ShowcaseBanner>
   <div class="flex-col flex pt-48 z-10 relative" id="experiences">
-    <span class="mx-4 text-3xl sm:text-4xl text-center font-medium bg-gradient-to-r from-grey-50 to-grey-100 bg-clip-text text-transparent">Des expériences <span class="bg-blue text-white hover:bg-transparent hover:text-grey-75 ease-in-out transition-all duration-1000">professionnelles</span> qui m’ont <br>énormément apportés.</span>
+    <span class="mx-4 text-3xl sm:text-4xl text-center font-medium bg-gradient-to-r from-grey-50 to-grey-100
+    bg-clip-text text-transparent">
+      Des expériences
+      <span class="bg-blue text-white hover:bg-transparent hover:text-grey-75 ease-in-out transition-all duration-1000">
+        professionnelles
+      </span>
+      qui m’ont
+      <br>
+      énormément apportés.
+    </span>
     <ListExperience>
       <ExperienceCell v-for="experience in experiences" v-bind="experience" />
     </ListExperience>
   </div>
   <div class="flex-col flex z-50 justify-center align-middle px-14 sm:px-64 pb-14 sm:pb-96 top-0 ">
     <div class="magic-div flex flex-col justify-center align-middle sticky py-60 sm:py-72">
-      <span :class="{ 'text-white scale-101': visibleTextIndex === 0, 'text-gray-600': visibleTextIndex !== 0 }" class="text-4xl sm:text-7xl font-bold transition-all ease-in-out duration-500">J’ai toujours envie de coder de nouveaux projets.</span>
-      <span :class="{ 'text-white scale-101': visibleTextIndex === 1, 'text-gray-600': visibleTextIndex !== 1 }" class="text-4xl sm:text-7xl font-bold transition-all ease-in-out duration-500">Cette passion me pousse à créer des expériences.</span>
-      <span :class="{ 'text-white scale-101': visibleTextIndex === 2, 'text-gray-600': visibleTextIndex !== 2 }" class="text-4xl sm:text-7xl font-bold transition-all ease-in-out duration-500">J’aime me réinventer et jouer avec les <span :class="{ 'text-yellow-300': visibleTextIndex === 2, 'text-gray-600': visibleTextIndex !== 2 }" class="transition-all ease-in-out duration-700">couleurs</span> et les <span :class="{ 'text-white': visibleTextIndex === 2, 'text-gray-600': visibleTextIndex !== 2 }" class="transition-all ease-in-out duration-700">{{ visibleTextIndex === 2 ? 'ForMEs' : 'formes'}}</span>.</span>
+      <span :class="{ 'text-white scale-101': visibleTextIndex === 0, 'text-gray-600': visibleTextIndex !== 0 }"
+            class="text-4xl sm:text-7xl font-bold transition-all ease-in-out duration-500">
+        J’ai toujours envie de coder de nouveaux projets.
+      </span>
+      <span :class="{ 'text-white scale-101': visibleTextIndex === 1, 'text-gray-600': visibleTextIndex !== 1 }"
+            class="text-4xl sm:text-7xl font-bold transition-all ease-in-out duration-500">
+        Cette passion me pousse à créer des expériences.
+      </span>
+      <span :class="{ 'text-white scale-101': visibleTextIndex === 2, 'text-gray-600': visibleTextIndex !== 2 }"
+            class="text-4xl sm:text-7xl font-bold transition-all ease-in-out duration-500">
+        J’aime me réinventer et jouer avec les
+        <span :class="{ 'text-yellow-300': visibleTextIndex === 2, 'text-gray-600': visibleTextIndex !== 2 }"
+              class="transition-all ease-in-out duration-700">
+          couleurs
+        </span>
+        et les
+        <span :class="{ 'text-white': visibleTextIndex === 2, 'text-gray-600': visibleTextIndex !== 2 }"
+              class="transition-all ease-in-out duration-700">
+          {{ visibleTextIndex === 2 ? 'ForMEs' : 'formes'}}
+        </span>
+        .
+      </span>
     </div>
     <div class="flex h-50 w-full"/>
   </div>
@@ -161,7 +214,12 @@ onUnmounted(() => {
         </div>
       </div>
       <div class="sticky top-0 h-screen overflow-hidden w-full" id="projects">
-        <ProjectShow :text="`J'ai réalisé l'application`" :application="projects[currentProject].application" :image="projects[currentProject].image" :title="projects[currentProject].title" :opacity="opacity" :progress="progress"></ProjectShow>
+        <ProjectShow :text="`J'ai réalisé l'application`"
+                     :application="projects[currentProject].application"
+                     :image="projects[currentProject].image"
+                     :title="projects[currentProject].title"
+                     :opacity="opacity"
+                     :progress="progress"/>
       </div>
     </div>
   <Footer></Footer>
