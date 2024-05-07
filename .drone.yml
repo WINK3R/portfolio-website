@@ -1,10 +1,45 @@
 kind: pipeline
-name: default
 type: docker
+name: Portfolio
+
+trigger:
+  event:
+    - push
 
 steps:
-  - name: build
-    image: node:22-alpine
+  - name: app-build
+    image: node:latest
     commands:
-      - yarn install
-      - yarn build
+      - cd ./src
+      - npm install
+      - npm run build
+
+  - name: docker-build-and-push
+    image: plugins/docker
+    settings:
+      dockerfile: src/Dockerfile
+      context: .
+      registry: hub.codefirst.iut.uca.fr
+      repo: hub.codefirst.iut.uca.fr/lucas.delanier/portfolio
+      username:
+        from_secret: SECRET_REGISTRY_USERNAME
+      password:
+        from_secret: SECRET_REGISTRY_PASSWORD
+    depends_on: [ app-build ]
+
+  - name: deploy-container
+    image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-dockerproxy-clientdrone:latest
+    environment:
+      IMAGENAME: hub.codefirst.iut.uca.fr/lucas.delanier/portfolio:latest
+      CONTAINERNAME: portfolio
+      COMMAND: create
+      OVERWRITE: true
+    depends_on: [ docker-build-and-push ]
+  - name: code-analysis
+    image: sonarsource/sonar-scanner-cli
+    environment:
+      SONAR_TOKEN:
+        from_secret: SECRET_SONAR_LOGIN
+    commands:
+      - sonar-scanner -Dsonar.projectKey=portfolio-website -Dsonar.sources=. -Dsonar.host.url=https://codefirst.iut.uca.fr/sonar -Dsonar.login=$${SONAR_TOKEN}
+    depends_on: [ studentbrosjs-build ]
