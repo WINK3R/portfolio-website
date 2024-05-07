@@ -28,8 +28,10 @@ watch(() => props.progress, (progress) => {
         <p class="text-2xl font-bold md:text-3xl xl:text-4xl text-white"> {{ props.application}}</p>
       </div>
     </div>
-    <div class="flex h-[70vh] lg:h-screen flex-1 justify-center lg:items-center p-4" :style="{ transform: `translateY(${translateYleft}px)`}">
-      <img :src="`images/${ props.image}`" class="w-full h-full object-contain p-20" :alt="`screenshot de ${props.application}`">
+    <div class="flex h-[70vh] lg:h-screen flex-1 justify-center lg:items-center p-4"
+         :style="{ transform: `translateY(${translateYleft}px)`}">
+      <img :src="`images/${ props.image}`" class="w-full h-full object-contain p-20"
+           :alt="`screenshot de ${props.application}`" width="100" height="100">
     </div>
   </div>
 </template>
