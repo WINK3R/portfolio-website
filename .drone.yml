@@ -17,7 +17,7 @@ steps:
   - name: docker-build-and-push
     image: plugins/docker
     settings:
-      dockerfile: src/Dockerfile
+      dockerfile: Dockerfile
       context: .
       registry: hub.codefirst.iut.uca.fr
       repo: hub.codefirst.iut.uca.fr/lucas.delanier/portfolio
