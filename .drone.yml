@@ -42,4 +42,4 @@ steps:
         from_secret: SECRET_SONAR_LOGIN
     commands:
       - sonar-scanner -Dsonar.projectKey=portfolio-website -Dsonar.sources=. -Dsonar.host.url=https://codefirst.iut.uca.fr/sonar -Dsonar.login=$${SONAR_TOKEN}
-    depends_on: [ studentbrosjs-build ]
+    depends_on: [ docker-build-and-push ]
