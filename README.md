@@ -1,7 +1,12 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+[![Quality Gate Status](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=alert_status&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Security Rating](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=security_rating&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Maintainability Rating](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=sqale_rating&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Quality Gate Status](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=alert_status&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Reliability Rating](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=reliability_rating&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Bugs](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=bugs&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Code Smells](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=code_smells&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Duplicated Lines (%)](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=duplicated_lines_density&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Lines of Code](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=ncloc&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Security Hotspots](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=security_hotspots&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Technical Debt](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=sqale_index&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
+[![Vulnerabilities](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=portfolio-website&metric=vulnerabilities&token=d9cf53ddc39efbf3cd790ea93586210d78528d61)](https://codefirst.iut.uca.fr/sonar/dashboard?id=portfolio-website)
