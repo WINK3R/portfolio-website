@@ -6,10 +6,10 @@ import GithubLogo from './../assets/icons/github.svg';
 <template>
     <div class="flex flex-col justify-center items-center bg-grey-400 text-white pt-40 pb-8 px-12 sm:px-64">
       <div class="flex flex-row justify-center items-center gap-2 py-4">
-        <a href="https://github.com/WINK3R" target="_blank" rel="noopener">
+        <a href="//www.linkedin.com/in/lucas-delanier" target="_blank" rel="noopener">
           <LinkedinLogo class="w-8 h-8 text-gray-500"/>
         </a>
-        <a href="https://www.linkedin.com/in/lucas-delanier/" target="_blank" rel="noopener">
+        <a href="//github.com/WINK3R" target="_blank" rel="noopener">
           <GithubLogo class="w-8 h-8 text-gray-500"/>
         </a>
       </div>
