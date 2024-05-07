@@ -1,4 +1,3 @@
-<!-- Copyright 2024 Lucas Delanier -->
 <script setup>
 import Header from './components/Header.vue'
 import HeroContainer from './components/HeroContainer.vue';
