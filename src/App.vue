@@ -49,7 +49,6 @@ const experiences = [
     important: false
   },
 ];
-
 const projects = [
   {application: "MovieFinder", title: "J'ai créé l'application", image:"moviefinder-mockup.png"},
   {application: "JustMusic", title: "J'ai co-créé l'application", image:"justmusic-mockup.png"},
