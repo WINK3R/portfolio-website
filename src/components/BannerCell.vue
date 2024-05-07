@@ -11,7 +11,3 @@ const props = defineProps({
     <p class="text-grey-200 text-xl sm:text-2.5xl font-extralight leading-5 sm:leading-8" v-html="props.label"/>
   </div>
 </template>
-
-<style scoped>
-
-</style>

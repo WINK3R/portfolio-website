@@ -24,6 +24,7 @@ const experiences = [
     duration: "10 semaines",
     year: "2023",
     image: "inrae-blue.png",
+    company: "INRAE",
     description: "Stage de 10 semaines portant sur l’élaboration d’un jeu sérieux (quizz) sur un site web à destination des chercheurs pour les aider dans leurs recherches sur l’alimentation et l’activité physique des jeunes français.<br><br>J’ai mis en pratique mes capacités à concevoir et optimiser une application existante ainsi qu'à faire des choix techniques décisifs. J’ai également su gérer la gestion de ce projet en mettant en place des pratiques propres aux méthodes agiles telles que la méthode SCRUM.<br><br>J’ai eu à utiliser des technologies du Web comme PHP, HTML & CSS ainsi que Bootstrap. Pour la gestion des données, j’ai mis en place une base de données SQL. Nous avons également dû porter une attention toute particulière au RGPD en raison de la manipulation de données de santé sensibles.",
     important: true
   },
@@ -31,6 +32,7 @@ const experiences = [
     duration: "2 mois",
     year: "2023",
     image: "inrae-grey.png",
+    company: "INRAE",
     description: "CDD de 2 mois pour réaliser une version mobile multiplateforme en utilisant Flutter.",
     important: false
   },
@@ -38,6 +40,7 @@ const experiences = [
     duration: "1 an",
     year: "2024",
     image: "cikaba-blue.png",
+    company: "Cikaba",
     description: "Alternance d'1 an.<br><br>J’ai eu l’opportunité de rejoindre une équipe dynamique et agréable qui m’a permis de me professionnaliser dans un contexte favorable. J’ai travaillé en tant que développeur frontend.<br><br>Cela a consisté principalement en l’élaboration d’une application web en Vue.js qui sert de plateforme SSO pour centraliser l’authentification des utilisateurs sur une application. J’ai également pu exploiter mes compétences en design d’interface pour produire des maquettes et prototypes afin d’améliorer l’esthétique des applications en cours de développement.",
     important: true
   },
@@ -45,6 +48,7 @@ const experiences = [
     duration: "2 ans",
     year: "2024-2026",
     image: "cikaba-grey.png",
+    company: "Cikaba",
     description: "2 années supplémentaires pour mon Mastère Expert en ingénierie logicielle.",
     important: false
   },
@@ -117,8 +121,8 @@ onUnmounted(() => {
 
 <template>
   <div class=" absolute pointer-events-none w-full h-full overflow-clip">
-    <img src="./assets/images/camera-effect.png" class="top-10 right-10 w-full h-full object-cover z-0 scale-110">
-    <img src="./assets/images/filter.png" class="fixed bottom-0 right-0 w-full h-full object-cover z-50">
+    <img src="./assets/images/camera-effect.png" class="top-10 right-10 w-full h-full object-cover z-0 scale-110" alt="">
+    <img src="./assets/images/filter.png" class="fixed bottom-0 right-0 w-full h-full object-cover z-50" alt="">
   </div>
   <Header id="about"></Header>
   <HeroContainer class=" mt-6 sm:mt-14"/>

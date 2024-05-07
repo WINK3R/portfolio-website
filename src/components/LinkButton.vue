@@ -11,7 +11,3 @@ const props = defineProps({
     </button>
   </a>
 </template>
-
-<style scoped>
-
-</style>

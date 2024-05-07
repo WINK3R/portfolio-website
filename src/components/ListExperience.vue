@@ -1,5 +1,4 @@
 <script setup>
-import ExperienceCell from "./ExperienceCell.vue";
 
 </script>
 
@@ -8,7 +7,3 @@ import ExperienceCell from "./ExperienceCell.vue";
     <slot></slot>
   </div>
 </template>
-
-<style scoped>
-
-</style>

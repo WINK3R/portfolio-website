@@ -48,7 +48,3 @@ const skills = [
     </SkillCell>
   </div>
 </template>
-
-<style scoped>
-
-</style>

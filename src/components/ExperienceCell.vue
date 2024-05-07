@@ -6,6 +6,7 @@ const props = defineProps({
   duration: String,
   description: String,
   image: String,
+  company: String,
   important: Boolean
 });
 </script>
@@ -16,11 +17,8 @@ const props = defineProps({
       <InfoBuble>{{ props.year }}</InfoBuble>
       <InfoBuble>{{ props.duration }}</InfoBuble>
     </div>
-    <img :src="`images/${ props.image }`" class="object-contain mb-6" :class=" props.important === true ? 'h-24' : 'h-10'">
+    <img :src="`images/${ props.image }`" class="object-contain mb-6" :class=" props.important === true ? 'h-24' : 'h-10'" :alt="`logo de l'entreprise ${props.company}`">
     <p class="text-xl text-gray-500" v-html="props.description"/>
 
   </div>
 </template>
-
-<style scoped>
-</style>

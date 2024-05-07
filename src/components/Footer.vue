@@ -17,7 +17,3 @@ import GithubLogo from './../assets/icons/github.svg';
       <p class="text-gray-500 pt-6">© 2024 Delanier Lucas</p>
     </div>
 </template>
-
-<style scoped>
-
-</style>
