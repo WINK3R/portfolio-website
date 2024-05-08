@@ -205,7 +205,8 @@ onUnmounted(() => {
     </div>
     <div class="flex h-50 w-full"/>
   </div>
-    <div class="flex h-300 w-full relative z-10 top-0 magic-showcase width-container" :style="{ height: projects.length * 100 + 'vh'}">
+    <div class="flex h-300 w-full relative z-10 top-0 magic-showcase width-container"
+         :style="{ height: projects.length * 100 + 'vh'}">
       <div class="absolute h-full w-full">
         <div class="sticky top-0 grid min-h-screen w-full grid-cols-1 lg:grid-cols-2">
           <div class="h-[30vh] bg-black lg:h-auto"></div>
