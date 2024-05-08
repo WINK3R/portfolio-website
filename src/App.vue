@@ -1,5 +1,5 @@
 <script setup>
-import Header from './components/Header.vue'
+import Header from './components/HeaderContainer.vue'
 import HeroContainer from './components/HeroContainer.vue';
 import ShowcaseBanner from "./components/ShowcaseBanner.vue";
 import GridSkill from "./components/GridSkill.vue";
@@ -133,9 +133,9 @@ onUnmounted(() => {
 
 <template>
   <div class=" absolute pointer-events-none w-full h-full overflow-clip">
-    <img src="./assets/images/camera-effect.png" class="top-10 right-10 w-full h-full object-cover z-0 scale-110"
+    <img src="/src/assets/images/camera-effect.png" class="top-10 right-10 w-full h-full object-cover z-0 scale-110"
          alt="" width="1512" height="1071">
-    <img src="./assets/images/filter.png" class="fixed bottom-0 right-0 w-full h-full object-cover z-50"
+    <img src="/src/assets/images/filter.png" class="fixed bottom-0 right-0 w-full h-full object-cover z-50"
          alt="" width="1508" height="1376">
   </div>
   <Header id="about"></Header>
@@ -159,7 +159,7 @@ onUnmounted(() => {
     <GridSkill class="mx-8 sm:mx-28 py-28"/>
   </div>
   <ShowcaseBanner>
-      <img v-for="langage in langages" :src="`images/${ langage.image}`"
+      <img v-for="langage in langages" :src="`/src/assets/images/${ langage.image}`"
            class="w-18 h-18 hover:-translate-y-1 transition-all duration-300 ease-in-out hover:rotate-12 origin-center"
            :alt="langage.name" width="64" height="64"/>
   </ShowcaseBanner>

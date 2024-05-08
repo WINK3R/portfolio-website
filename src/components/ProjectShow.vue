@@ -29,7 +29,7 @@ watch(() => props.progress, (progress) => {
       </div>
     </div>
     <div class="flex h-[70vh] lg:h-screen flex-1 justify-center lg:items-center p-4 transform-container-2">
-      <img :src="`images/${ props.image}`" class="w-full h-full object-contain p-20"
+      <img :src="`/src/assets/images/${ props.image}`" class="w-full h-full object-contain p-20"
            :alt="`screenshot de ${props.application}`">
     </div>
   </div>
