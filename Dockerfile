@@ -2,7 +2,8 @@ FROM node:lts-alpine as builder
 
 WORKDIR /app
 COPY . ./
-RUN npm install && npm vite build
+RUN npm install
+RUN vite build
 
 FROM nginx:alpine
 
