@@ -19,7 +19,7 @@ const props = defineProps({
       <InfoBuble>{{ props.year }}</InfoBuble>
       <InfoBuble>{{ props.duration }}</InfoBuble>
     </div>
-    <img :src="new URL(`./dir/${props.image}`, '/images/')" class="object-contain mb-6"
+    <img :src="`/src/assets/images/${ props.image }`" class="object-contain mb-6"
          :class=" props.important === true ? 'h-24' : 'h-10'" :alt="`logo de l'entreprise ${props.company}`">
     <p class="text-xl text-gray-500" v-html="props.description"/>
 
