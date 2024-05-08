@@ -1,19 +1,9 @@
-FROM node:16
+FROM node:lts-alpine as builder
 
-# Set the working directory in the container
 WORKDIR /app
+COPY . ./
+RUN npm install && npm vite build
 
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+FROM nginx:alpine
 
-# Install app dependencies
-RUN npm install
-
-# Copy the rest of your application code to the working directory
-COPY . .
-
-# Expose a port to communicate with the React app
-EXPOSE 80
-
-# Start your React app
-CMD ["npm", "run", "dev"]
+COPY --from=builder /app/dist /usr/share/nginx/html
