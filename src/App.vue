@@ -1,5 +1,5 @@
 <script setup>
-import Header from './components/HeaderContainer.vue'
+import HeaderContainer from './components/HeaderContainer.vue'
 import HeroContainer from './components/HeroContainer.vue';
 import ShowcaseBanner from "./components/ShowcaseBanner.vue";
 import GridSkill from "./components/GridSkill.vue";
@@ -138,7 +138,7 @@ onUnmounted(() => {
     <img src="/src/assets/images/filter.png" class="fixed bottom-0 right-0 w-full h-full object-cover z-50"
          alt="" width="1508" height="1376">
   </div>
-  <Header id="about"></Header>
+  <HeaderContainer id="about"></HeaderContainer>
   <HeroContainer class=" mt-6 sm:mt-14"/>
   <ShowcaseBanner class=" mt-24 sm:mt-36 z-10 relative">
     <BannerCell number="1" label="ANNEE <br> D'EXPERIENCE"/>
