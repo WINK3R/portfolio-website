@@ -1,0 +1,29 @@
+{
+  "cv": "CV",
+  "personal-email": "Delanierlucas@gmail.com",
+  "copy": "Copier",
+  "about": "À propos",
+  "skills": "Compétences",
+  "experiences": "Expérience",
+  "projects": "Projets",
+  "welcome-message": "Salut, je suis Lucas",
+  "catch-phrase": "Developpeur & <br> Designer d'applications",
+  "banner": {
+    "experience": "ANNEE <br> D'EXPERIENCE",
+    "projects": "PROJETS <br> REALISES",
+    "skills": "FRONT-END <br> BACK-END",
+    "ui-ux": "UI/UX <br> DESIGNER"
+  },
+  "social-media": {
+    "linkedin": "LinkedIn",
+    "github": "Github",
+    "mail": "Mail"
+  },
+  "skills-list": {
+    "title" : {
+      "start": "Mon expertise repose sur",
+      "highlight": " six piliers",
+      "end": "essentiels."
+    }
+  }
+}

@@ -149,12 +149,12 @@ onUnmounted(() => {
   <div class="flex-col flex pt-24 sm:pt-48 pb-28 z-10 relative" id="skills">
     <span class="mx-4 text-3xl sm:text-4xl text-center font-medium bg-gradient-to-r from-grey-50
     to-grey-100 bg-clip-text text-transparent px-10 ">
-      Mon expertise repose sur
+      {{ $t('skills-list.title.start')}}
       <span class="bg-blue text-white hover:bg-transparent hover:text-grey-75 ease-in-out transition-all duration-1000">
-        six piliers
+        {{ $t('skills-list.title.highlight')}}
       </span>
       <br>
-      essentiels.
+      {{ $t('skills-list.title.end')}}
     </span>
     <GridSkill class="mx-8 sm:mx-28 py-28"/>
   </div>

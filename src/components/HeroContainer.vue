@@ -8,27 +8,26 @@ import RedirectLogo from './../assets/icons/redirect.svg';
              alt="Lucas Delanier">
         <div class="flex flex-row items-center gap-1">
           <p class="pt-2">
-            Salut, je suis Lucas
+            {{ $t('welcome-message')}}
           </p>
           <p class="hover:scale-150 transition-all ease-in duration-300 hover:rotate-12">
             👋
           </p>
         </div>
         <h1 class="text-center text-3xl sm:text-5xl font-medium bg-gradient-to-r from-grey-50 to-grey-100 bg-clip-text
-         text-transparent leading-tight pt-5">
-          Développeur &<br>designer d'application.
+         text-transparent leading-tight pt-5" v-html="$t('catch-phrase')">
         </h1>
         <div class="flex scale-90 sm:scale-100 flex-row gap-3 pt-8 flex-wrap items-center justify-center">
           <LinkButton url="https://www.linkedin.com/in/lucas-delanier/">
-            Linkedin
+            {{ $t('social-media.linkedin')}}
             <RedirectLogo/>
           </LinkButton>
           <LinkButton url="https://github.com/WINK3R">
-            Github
+            {{ $t('social-media.github')}}
             <RedirectLogo/>
           </LinkButton>
           <LinkButton url="mailto:delanierlucas@gmail.com">
-            Mail
+            {{ $t('social-media.mail')}}
             <RedirectLogo/>
           </LinkButton>
         </div>
