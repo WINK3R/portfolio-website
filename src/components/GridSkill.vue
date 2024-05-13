@@ -46,7 +46,7 @@ const skills = [
 <template>
   <div class="grid gap-5 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1">
     <SkillCell v-for="(skill, index) in skills" :key="index" :title="skill.title" :text="skill.text" class="group">
-      <img :src="`/src/assets/images/${ skill.image}`" :height="60" :width="60"
+      <img :src="`/images/${ skill.image}`" :height="60" :width="60"
            class="h-7 w-7 group-hover:scale-110 transition-all ease-in duration-500 group-hover:brightness-200"
            :alt="skill.alt">
     </SkillCell>

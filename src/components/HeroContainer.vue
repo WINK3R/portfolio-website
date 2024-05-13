@@ -4,7 +4,7 @@ import RedirectLogo from './../assets/icons/redirect.svg';
 </script>
 <template>
     <div class="flex flex-col justify-center items-center">
-        <img src="/src/assets/images/picture.png" height="624" width="624" class="w-24 h-24 sm:w-40 sm:h-40"
+        <img src="/images/picture.png" height="624" width="624" class="w-24 h-24 sm:w-40 sm:h-40"
              alt="Lucas Delanier">
         <div class="flex flex-row items-center gap-1">
           <p class="pt-2">
