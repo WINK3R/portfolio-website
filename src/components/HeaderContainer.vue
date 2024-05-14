@@ -27,8 +27,6 @@ function copyEmail(event) {
     }, 2700);
   }
 }
-
-
 </script>
 <template>
     <header class="flex w-full p-12 justify-between items-center">
@@ -42,7 +40,7 @@ function copyEmail(event) {
             </div>
             <PrimaryButton :text="$t('cv')" @click="openCV"/>
         </div>
-        <div class=" hidden sm:block">
+        <div class="hidden sm:block">
             <BreadCrumb>
                 <template v-slot:first>
                     <BreadCrumbCell url="about">{{ $t('about')}}</BreadCrumbCell>
