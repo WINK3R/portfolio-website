@@ -1,5 +1,5 @@
 <script setup>
-import HeaderContainer from './components/HeaderContainer.vue';
+import HeaderContainer from './components/HeaderContainer.vue'
 import HeroContainer from './components/HeroContainer.vue';
 import ShowcaseBanner from "./components/ShowcaseBanner.vue";
 import GridSkill from "./components/GridSkill.vue";
@@ -70,10 +70,6 @@ const projects = [
   {application: "JustMusic", title: "J'ai co-créé l'application", image:"justmusic-mockup.png"},
   {application: "Allin", title: "J'ai co-créé l'application", image:"allin-mockup.png"},
   {application: "Compagnon", title: "J'ai créé l'application", image:"compagnon-mockup.png"},
-  {application: "Compagnon", title: "J'ai créé l'application", image:"compagnon-mockup.png"},
-  {application: "Compagnon", title: "J'ai créé l'application", image:"compagnon-mockup.png"},
-  {application: "Compagnon", title: "J'ai créé l'application", image:"compagnon-mockup.png"},
-
 ]
 
 const currentProjectIndex = ref(0);
@@ -139,7 +135,7 @@ onUnmounted(() => {
     <img src="/images/filter.png" class="fixed bottom-0 right-0 w-full h-full object-cover z-50"
          alt="" width="1508" height="1376">
   </div>
-  <HeaderContainer></HeaderContainer>
+  <HeaderContainer id="about"></HeaderContainer>
   <HeroContainer class=" mt-6 sm:mt-14"/>
   <ShowcaseBanner class=" mt-24 sm:mt-36 z-10 relative">
     <BannerCell number="1" label="ANNEE <br> D'EXPERIENCE"/>
@@ -233,7 +229,6 @@ onUnmounted(() => {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
