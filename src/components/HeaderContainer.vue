@@ -7,7 +7,7 @@ import CopyJson from '../assets/lotties/Animation - 1714933994295.json'
 import { ref } from "vue";
 function openCV(){
   console.log('openCV')
-  window.open('files/cv.pdf', '_blank');
+  window.open('/files/cv.pdf', '_blank');
 }
 const copyAnimation = ref(null)
 const display = ref(false)
