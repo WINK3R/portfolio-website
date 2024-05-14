@@ -73,7 +73,6 @@ const projects = [
 
 ]
 
-
 const currentProjectIndex = ref(0);
 const currentProject = computed(() => {
   return Math.floor(currentProjectIndex.value);
@@ -119,7 +118,6 @@ const updateValue = () => {
     opacity.value= Math.max(0, (1.0 - progress.value) * 4);
   }
 };
-
 
 // Hook to add and remove scroll event listener
 onMounted(() => {
@@ -178,18 +176,18 @@ onUnmounted(() => {
       <ExperienceCell v-for="experience in experiences" v-bind="experience" />
     </ListExperience>
   </div>
-  <div class="flex-col flex z-50 justify-center align-middle px-14 sm:px-64 pb-14 sm:pb-96 top-0 ">
+  <div class="flex-col flex z-50 justify-center align-middle px-14 sm:px-32 md:px-40 pb-14 sm:pb-96 top-0 ">
     <div class="magic-div flex flex-col justify-center align-middle sticky py-60 sm:py-72">
       <span :class="{ 'text-white scale-101': visibleTextIndex === 0, 'text-gray-600': visibleTextIndex !== 0 }"
-            class="text-4xl sm:text-7xl font-bold transition-all ease-in-out duration-500">
+            class="text-4xl sm:text-5xl md:text-7xl font-bold transition-all ease-in-out duration-500">
         J’ai toujours envie de coder de nouveaux projets.
       </span>
       <span :class="{ 'text-white scale-101': visibleTextIndex === 1, 'text-gray-600': visibleTextIndex !== 1 }"
-            class="text-4xl sm:text-7xl font-bold transition-all ease-in-out duration-500">
+            class="text-4xl sm:text-5xl md:text-7xl font-bold transition-all ease-in-out duration-500">
         Cette passion me pousse à créer des expériences.
       </span>
       <span :class="{ 'text-white scale-101': visibleTextIndex === 2, 'text-gray-600': visibleTextIndex !== 2 }"
-            class="text-4xl sm:text-7xl font-bold transition-all ease-in-out duration-500">
+            class="text-4xl sm:text-5xl md:text-7xl font-bold transition-all ease-in-out duration-500">
         J’aime me réinventer et jouer avec les
         <span :class="{ 'text-yellow-300': visibleTextIndex === 2, 'text-gray-600': visibleTextIndex !== 2 }"
               class="transition-all ease-in-out duration-700">
