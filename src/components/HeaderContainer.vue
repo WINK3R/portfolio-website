@@ -3,7 +3,7 @@ import PrimaryButton from './PrimaryButton.vue';
 import BreadCrumb from './BreadCrumb.vue';
 import BreadCrumbCell from './BreadCrumbCell.vue';
 import {Vue3Lottie} from "vue3-lottie";
-import CopyJson from '../assets/lotties/Animation-1714933994295.json'
+import CopyJson from '/src/assets/lotties/Animation-1714933994295.json'
 import { ref } from "vue";
 function openCV(){
   console.log('openCV')

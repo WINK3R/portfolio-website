@@ -70,6 +70,9 @@ const projects = [
   {application: "JustMusic", title: "J'ai co-créé l'application", image:"justmusic-mockup.png"},
   {application: "Allin", title: "J'ai co-créé l'application", image:"allin-mockup.png"},
   {application: "Compagnon", title: "J'ai créé l'application", image:"compagnon-mockup.png"},
+  {application: "Compagnon", title: "J'ai créé l'application", image:"compagnon-mockup.png"},
+  {application: "Compagnon", title: "J'ai créé l'application", image:"compagnon-mockup.png"},
+  {application: "Compagnon", title: "J'ai créé l'application", image:"compagnon-mockup.png"},
 
 ]
 
