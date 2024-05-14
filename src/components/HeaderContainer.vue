@@ -3,7 +3,7 @@ import PrimaryButton from './PrimaryButton.vue';
 import BreadCrumb from './BreadCrumb.vue';
 import BreadCrumbCell from './BreadCrumbCell.vue';
 import {Vue3Lottie} from "vue3-lottie";
-import CopyJson from '../assets/lotties/Animation-1714933994295.json'
+import CopyJson from '../assets/lotties/Animation-1714933994295.json';
 import {ref} from "vue";
 function openCV(){
   console.log('openCV')
@@ -43,20 +43,6 @@ function copyEmail(event) {
             <PrimaryButton :text="$t('cv')" @click="openCV"/>
         </div>
         <div class="hidden sm:block">
-            <BreadCrumb>
-                <template v-slot:first>
-                    <BreadCrumbCell url="about">{{ $t('about')}}</BreadCrumbCell>
-                </template>
-                <template v-slot:second>
-                    <BreadCrumbCell url="skills">{{ $t('skills')}}</BreadCrumbCell>
-                </template>
-              <template v-slot:third>
-                <BreadCrumbCell url="experiences">{{ $t('experiences')}}</BreadCrumbCell>
-              </template>
-                <template v-slot:fourth>
-                    <BreadCrumbCell url="projects">{{ $t('projects')}}</BreadCrumbCell>
-                </template>
-            </BreadCrumb>
         </div>
     </header>
 </template>
