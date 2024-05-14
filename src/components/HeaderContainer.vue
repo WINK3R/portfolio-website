@@ -42,7 +42,7 @@ function copyEmail(event) {
             </div>
             <PrimaryButton :text="$t('cv')" @click="openCV"/>
         </div>
-        <div class=" sm:block">
+        <div class="hidden sm:block">
             <BreadCrumb>
                 <template v-slot:first>
                     <BreadCrumbCell url="about">{{ $t('about')}}</BreadCrumbCell>

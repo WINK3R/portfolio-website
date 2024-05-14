@@ -1,5 +1,5 @@
 <script setup>
-import HeaderContainer from './components/HeaderContainer.vue'
+import HeaderContainer from './components/HeaderContainer.vue';
 import HeroContainer from './components/HeroContainer.vue';
 import ShowcaseBanner from "./components/ShowcaseBanner.vue";
 import GridSkill from "./components/GridSkill.vue";
