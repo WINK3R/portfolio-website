@@ -7,7 +7,7 @@ import CopyJson from '../assets/lotties/Animation-1714933994295.json'
 import {ref} from "vue";
 function openCV(){
   console.log('openCV')
-  window.open('../assets/files/cv.pdf', '_blank');
+  window.open('/files/cv.pdf', '_blank');
 }
 const copyAnimation = ref(null)
 const display = ref(false)
@@ -42,7 +42,7 @@ function copyEmail(event) {
             </div>
             <PrimaryButton :text="$t('cv')" @click="openCV"/>
         </div>
-        <div class=" hidden sm:block">
+        <div class=" sm:block">
             <BreadCrumb>
                 <template v-slot:first>
                     <BreadCrumbCell url="about">{{ $t('about')}}</BreadCrumbCell>
