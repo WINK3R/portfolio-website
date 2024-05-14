@@ -3,11 +3,11 @@ import PrimaryButton from './PrimaryButton.vue';
 import BreadCrumb from './BreadCrumb.vue';
 import BreadCrumbCell from './BreadCrumbCell.vue';
 import {Vue3Lottie} from "vue3-lottie";
-import CopyJson from '../assets/lotties/Animation - 1714933994295.json'
+import CopyJson from './../assets/lotties/Animation-1714933994295.json'
 import { ref } from "vue";
 function openCV(){
   console.log('openCV')
-  window.open('/files/cv.pdf', '_blank');
+  window.open('./../assets/files/cv.pdf', '_blank');
 }
 const copyAnimation = ref(null)
 const display = ref(false)

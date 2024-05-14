@@ -4,7 +4,7 @@ const props = defineProps({
 })
 </script>
 <template>
-    <a :href="`#${url}`">
+    <a :href="`#${props.url}`">
       <span class="hover:text-blue transition-all ease-in-out duration-250 cursor-pointer">
         <slot></slot>
       </span>
