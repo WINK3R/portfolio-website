@@ -2,10 +2,12 @@
 import PrimaryButton from './PrimaryButton.vue';
 import BreadCrumb from './BreadCrumb.vue';
 import BreadCrumbCell from './BreadCrumbCell.vue';
-import { ref } from "vue";
+import {Vue3Lottie} from "vue3-lottie";
+import CopyJson from '../assets/lotties/Animation-1714933994295.json'
+import {ref} from "vue";
 function openCV(){
   console.log('openCV')
-  window.open('/files/cv.pdf', '_blank');
+  window.open('../assets/files/cv.pdf', '_blank');
 }
 const copyAnimation = ref(null)
 const display = ref(false)
@@ -34,6 +36,9 @@ function copyEmail(event) {
             <p class="selectable hidden lg:block">{{ $t('personal-email')}}</p>
             <div class="relative parent hidden lg:block">
               <PrimaryButton text="Copier" @click="copyEmail"/>
+              <Vue3Lottie ref="copyAnimation" :animationData="CopyJson" :height="180" :width="180"
+                          class="absolute z-10 pointer-events-none child" :auto-play="false" :loop="false"
+                          v-show="display"/>
             </div>
             <PrimaryButton :text="$t('cv')" @click="openCV"/>
         </div>
