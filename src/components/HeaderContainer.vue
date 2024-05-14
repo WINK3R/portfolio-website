@@ -31,7 +31,7 @@ function copyEmail(event) {
 
 </script>
 <template>
-    <header class="flex w-full p-12 justify-between items-center">
+    <div class="flex w-full p-12 justify-between items-center">
         <div class="flex items-center gap-7">
             <p class="selectable hidden lg:block">{{ $t('personal-email')}}</p>
             <div class="relative parent hidden lg:block">
@@ -58,7 +58,7 @@ function copyEmail(event) {
                 </template>
             </BreadCrumb>
         </div>
-    </header>
+    </div>
 </template>
 <style>
 .parent{
