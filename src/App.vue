@@ -135,7 +135,6 @@ onUnmounted(() => {
     <img src="/images/filter.png" class="fixed bottom-0 right-0 w-full h-full object-cover z-50"
          alt="" width="1508" height="1376">
   </div>
-  <HeaderContainer></HeaderContainer>
   <HeroContainer class=" mt-6 sm:mt-14"/>
   <ShowcaseBanner class=" mt-24 sm:mt-36 z-10 relative">
     <BannerCell number="1" label="ANNEE <br> D'EXPERIENCE"/>
